@@ -20,6 +20,7 @@ Jupyter
 limma
 MDS
 mentorship
+metagenomic
 NCI
 NHGRI
 Onboarding
@@ -33,7 +34,9 @@ px
 reproducibility
 Rmd
 RStudio
+SRA
 underserved
+Voilà
 Workspaces
 Workspace's
 www
