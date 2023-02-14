@@ -1,0 +1,84 @@
+
+## Locate Data
+
+Click on the DATA tab and click on the "Files" folder on the bottom left. You should see a folder `submissions/`.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Navigate to the Files folder under the DATA tab", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208af248fb0_0_78")
+```
+
+Click on:
+
+1. `submissions/`
+2. the folder corresponding to the Submission ID you just ran. Example: `c247972a-b661-4cef-ba67-caf1fde95c9b/`
+3. `fetch_sra_to_fastq/`
+4. the folder corresponding to the Workflow ID you just ran. Example: `98134693-8392-4064-b8dc-af518e567e9b/`
+5. `call-fastq_dl_sra/`
+
+You should now see the `.fastq` file associated with the Workflow. You should also see log files and other helpful output.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "The sequence fastq file", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208af248fb0_0_88")
+```
+
+Click on the file and copy the Terminal download command. Paste this somewhere temporary for now, as it will make our life easier shortly!
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Click the clipboard button to copy the download command", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208af248fb0_0_132")
+```
+
+## Launch Cloud Environment
+
+Create a new Jupyter analysis in the ANALYSES tab. Click the START button followed by the Jupyter button.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Creating a Jupyter analysis file", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208af248fb0_0_78")
+```
+
+When prompted, fill in the name as `sra_analysis` and click CREATE ANALYSIS.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Fill in a name and click CREATE ANALYSIS", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208af248fb0_0_111")
+```
+
+When prompted, click CREATE to launch the default cloud environment.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Click CREATE to launch the default cloud environment", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208af248fb0_0_122")
+```
+
+Click on the Terminal button. After waiting a few minutes, you can see that the Cloud environment is ready.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Click on the OPEN button when the environment is ready", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208af248fb0_0_142")
+```
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "The Jupyter Terminal appears when the cloud environment is ready", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208b8f790dc_23_3")
+```
+
+## Move Data to Persistent Disk
+
+In the Terminal, paste the command you copied from earlier and hit return. In our case, it will look like this (Yours will be different)
+
+```
+gsutil cp gs://fc-e07a98ef-7485-4f48-bd77-d8c463867ada/submissions/c247972a-b661-4cef-ba67-caf1fde95c9b/fetch_sra_to_fastq/98134693-8392-4064-b8dc-af518e567e9b/call-fastq_dl_sra/SRR22375322_1.fastq.gz .
+```
+
+You will see some dialog indicating that the file is downloading.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "The Jupyter Terminal appears when the cloud environment is ready", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208b8f790dc_23_3")
+```
+
+type `ls` and hit return to list files and confirm your sequence file is present.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "We want to see the sequence file listed in the working directory", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208b8f790dc_23_21")
+```
+
+The file can now be analyzed in your cloud environment!
+
+::: {.notice}
+You just copied your file to your **Persistent Disk**. As long as you launch a cloud environment from this Workspace, this sequence file should be available!
+:::
