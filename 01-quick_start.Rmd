@@ -33,7 +33,7 @@ Select "Run workflow(s) with inputs defined by data table".
 ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g1f25a933000_0_10")
 ```
 
-Set the "Select root entity type" to "sample" and click "SELECT DATA".
+Set the "Select root entity type" to "sample" and click SELECT DATA.
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Step 1 and 2 for setting up the Workflow.", out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208af248fb0_0_0")
@@ -51,13 +51,13 @@ Click on the space underneath "Attribute" and select `this.sample_id`.
 ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208af248fb0_0_17")
 ```
 
-Click "SAVE".
+Click SAVE.
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "The SAVE button is highlighted", out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208af248fb0_0_26")
 ```
 
-You are ready to launch the Workflow! Click "RUN ANALYSIS".
+You are ready to launch the Workflow! Click RUN ANALYSIS.
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "The RUN ANALYSIS button is highlighted", out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208af248fb0_0_34")
@@ -65,9 +65,23 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blq
 
 Voilà! Your Workflow is running. 
 
+::: {.notice}
 Because the Workflow is happening in the cloud, you can close your browser or shut down your computer without interrupting the transfer.
+:::
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "The Workflow status page describes submission statistics and job status", out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208af248fb0_0_42")
 ```
+
+## Check Workflow
+
+Click on the JOB HISTORY tab. You should see that the job status is "Done". This might take a few minutes.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "The check mark indicates the Workflow has completed successfully", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208af248fb0_0_50")
+```
+
+## Locate Data
+
+
 
