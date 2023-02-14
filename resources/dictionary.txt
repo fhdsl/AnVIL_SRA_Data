@@ -1,6 +1,7 @@
 AnVIL
 BiocManager
 bioinformatics
+BioProject
 BIPOC
 Bloomberg
 callout
@@ -35,6 +36,7 @@ reproducibility
 Rmd
 RStudio
 SRA
+tallgrass
 underserved
 Voilà
 Workspaces
