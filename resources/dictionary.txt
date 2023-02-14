@@ -1,6 +1,7 @@
 AnVIL
 BiocManager
 bioinformatics
+BioProject
 BIPOC
 Bloomberg
 callout
@@ -20,6 +21,7 @@ Jupyter
 limma
 MDS
 mentorship
+metagenomic
 NCI
 NHGRI
 Onboarding
@@ -33,7 +35,10 @@ px
 reproducibility
 Rmd
 RStudio
+SRA
+tallgrass
 underserved
+Voilà
 Workspaces
 Workspace's
 www
