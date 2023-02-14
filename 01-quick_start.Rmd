@@ -88,7 +88,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blq
 Click on the DATA tab and click on the "sample" table on the left.
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "Navigate to the Files folder under the DATA tab", out.width = '100%'}
-ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208af248fb0_0_78")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208b8f790dc_23_31")
 ```
 
 You should now see the file associated with the first sample!
