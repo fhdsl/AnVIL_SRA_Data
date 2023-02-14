@@ -17,9 +17,9 @@ The SRA Data corresponding to this project is located [here](https://www.ncbi.nl
 
 Clone the Workspace `https://anvil.terra.bio/#workspaces/anvil-outreach/SRA-data-on-AnVIL`.
 
-For this demo, we have given the cloned Workspace the name `SRA-data-on-AnVIL`.
+For this demo, we have given the cloned Workspace the name `SRA-data-on-AnVIL-example`.
 
-## Launch Workflow
+## Set Up Samples
 
 Navigate to the WORKFLOWS Tab and select the SRA_Fetch Workflow.
 
@@ -39,11 +39,13 @@ Set the "Select root entity type" to "sample" and click SELECT DATA.
 ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208af248fb0_0_0")
 ```
 
-On the Select Data popup, select only the first sample, `SRR22375322`.
+On the Select Data popup, select only the first sample, `SRR22375322`, and click OK.
 
 ```{r, fig.align='center', echo = FALSE, fig.alt= "The first sample selected from the data table.", out.width = '100%'}
 ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208af248fb0_0_8")
 ```
+
+## Launch Workflow
 
 Click on the space underneath "Attribute" and select `this.sample_id`.
 
@@ -83,5 +85,22 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blq
 
 ## Locate Data
 
+Click on the DATA tab and click on the "Files" folder on the bottom left. You should see a folder `submissions/`.
 
+```{r, fig.align='center', echo = FALSE, fig.alt= "Navigate to the Files folder under the DATA tab", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208af248fb0_0_78")
+```
 
+Click on:
+
+1. `submissions/`
+2. the folder corresponding to the Submission ID you just ran. Example: `c247972a-b661-4cef-ba67-caf1fde95c9b/`
+3. `fetch_sra_to_fastq/`
+4. the folder coresponding to the Workflow ID you just ran. Example: `98134693-8392-4064-b8dc-af518e567e9b/`
+5. `call-fastq_dl_sra/`
+
+You should now see the `.fastq` file associated with the Workflow. You should also see log files and other helpful output.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "The sequence fastq file", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208af248fb0_0_88")
+```
