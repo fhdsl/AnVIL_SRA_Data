@@ -1,8 +1,12 @@
 quick-start
-clone
+clone-workspace
 set-up-samples
 launch-workflow
 check-workflow
 locate-data
-launch-cloud-environment
-move-data-to-persistent-disk
+summary
+multiple-sra-files
+select-workflow-data
+check-workflow-1
+locate-data-1
+summary-1
