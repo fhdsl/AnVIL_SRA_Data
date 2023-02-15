@@ -13,7 +13,7 @@ This data comes from [this BioProject](https://www.ncbi.nlm.nih.gov/bioproject/P
 
 The SRA Data corresponding to this project is located [here](https://www.ncbi.nlm.nih.gov/Traces/study/?acc=SRP409181&o=acc_s%3Aa).
 
-## Clone
+## Clone Workspace
 
 Clone the Workspace `https://anvil.terra.bio/#workspaces/anvil-outreach/SRA-data-on-AnVIL`.
 
@@ -97,6 +97,15 @@ You should now see the file associated with the first sample!
 ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208b8f790dc_23_41")
 ```
 
+## Summary
+
+- Clone [Workspace](https://anvil.terra.bio/#workspaces/anvil-outreach/SRA-data-on-AnVIL)
+- Go to the WORKFLOWS tab
+- Select sample via data table ("Run workflow(s) with inputs defined by data table")
+- Set the Attribute to `this.sample_id`
+- SAVE and RUN ANALYSIS
+- Go to DATA tab and click "sample" table to see file populated
+
 # Multiple SRA files
 
 More than likely, you will be importing multiple files from SRA. Luckily, this is quite easy in AnVIL! In contrast to how your local computer works, The SRA Fetch Workflow imports files in parallel, so it does not take a substantially longer time.
@@ -140,5 +149,36 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blq
 ```
 
 ::: {.notice}
-The Workflow knows that you probably want to parallelize the import of your SRA files. This means that each import is happening at the same time. Notice how this workflow with multiple samples actually launched 4 different jobs/analyses!
+The Workflow knows that you probably want to parallelize the import of your SRA files. This means that each import is happening at the same time. Notice how this workflow with multiple samples actually launched 4 different jobs/analyses! This means that AnVIL can help you process lots of files much faster than working with them one by one.
 :::
+
+## Check Workflow
+
+Click on the JOB HISTORY tab. Different submissions are arranged by newest on the top. You should see that the job status is "Done".
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "An arrow pointing to 'Done' indicates the Workflow has completed successfully", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208b8f790dc_23_83")
+```
+
+
+## Locate Data
+
+Click on the DATA tab and click on the "sample" table on the left.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "Navigate to the Files folder under the DATA tab", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208b8f790dc_23_31")
+```
+
+You should now see the files associated with the second through fifth sample!
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "The imported files are now visible in the sample table", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208b8f790dc_23_92")
+```
+
+## Summary
+
+- Go to the WORKFLOWS tab
+- Select **mutiple** samples via data table ("Run workflow(s) with inputs defined by data table")
+- Set the Attribute to `this.sample_id`
+- SAVE and RUN ANALYSIS
+- Go to DATA tab and click "sample" table to see files populated
