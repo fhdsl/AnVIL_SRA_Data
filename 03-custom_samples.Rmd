@@ -25,7 +25,7 @@ This opens a popup that looks like this:
 ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208b8f790dc_23_153")
 ```
 
-However, let's take a moment to get aquainted with the new file we'll be uploading.
+However, let's take a moment to get acquainted with the new file we'll be uploading.
 
 ## The `samples.tsv` File
 

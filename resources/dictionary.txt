@@ -27,6 +27,7 @@ NHGRI
 Onboarding
 OTTR
 ottrpal
+parallelize
 plotMDS
 precompiled
 preprint
@@ -37,6 +38,7 @@ Rmd
 RStudio
 SRA
 tallgrass
+TSV
 underserved
 Voilà
 Workspaces

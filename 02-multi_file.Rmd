@@ -71,7 +71,7 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blq
 ## Summary
 
 - Go to the WORKFLOWS tab
-- Select **mutiple** samples via data table ("Run workflow(s) with inputs defined by data table")
+- Select **multiple** samples via data table ("Run workflow(s) with inputs defined by data table")
 - Set the Attribute to `this.sample_id`
 - SAVE and RUN ANALYSIS
 - Go to DATA tab and click "sample" table to see files populated
