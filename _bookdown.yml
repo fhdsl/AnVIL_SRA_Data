@@ -3,6 +3,8 @@ chapter_name: "Chapter "
 repo: https://github.com/fhdsl/AnVIL_SRA_Data/
 rmd_files: ["index.Rmd",
             "01-quick_start.Rmd",
+            "02-multi_file.Rmd",
+            "03-custom_samples.Rmd",
             "About.Rmd",
             "References.Rmd"]
 new_session: yes

@@ -1,0 +1,36 @@
+
+# Using SRA Data on Galaxy
+
+Let's see an example of using some of our SRA data in an analysis. We will use FastQC to check the quality of our files.
+
+## Launch Galaxy
+
+On the ANALYSES tab, select START and select the Galaxy application.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "On the ANALYSES tab, select START and select the Galaxy application", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208b8f790dc_23_191")
+```
+
+Click NEXT to provision the default environment.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "NEXT button highlighted on the Cloud Environment popup", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208b8f790dc_23_200")
+```
+
+Click CREATE. The environment will take ~7 minutes to provision.
+
+```{r, fig.align='center', echo = FALSE, fig.alt= "CREATE button highlighted on the Cloud Environment popup", out.width = '100%'}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8/edit#slide=id.g208b8f790dc_23_209")
+```
+
+
+
+::: {.notice}
+something here
+:::
+
+## Summary
+
+- a
+- b
+- c
