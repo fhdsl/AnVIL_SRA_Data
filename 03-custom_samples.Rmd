@@ -60,3 +60,9 @@ ottrpal::include_slide("https://docs.google.com/presentation/d/1l0P0gFpsPkYG7blq
 ::: {.notice}
 You can now proceed with running the Workflow as you did in the [Quick Start](#quick-start) and [Multiple Files](#multiple-sra-files) sections.
 :::
+
+## Summary
+
+- Go to the DATA tab
+- Select IMPORT DATA and "Upload TSV"
+- Add your custom file and click START IMPORT JOB
