@@ -31,7 +31,7 @@
   
   <link rel="shortcut icon" href="assets/AnVIL_style/anvil_favicon.ico" type="image/x-icon" />
 <link rel="prev" href="quick-start.html"/>
-<link rel="next" href="about-the-authors.html"/>
+<link rel="next" href="customize-samples.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -98,6 +98,13 @@
 <li class="chapter" data-level="2.3" data-path="multiple-sra-files.html"><a href="multiple-sra-files.html#locate-data-1"><i class="fa fa-check"></i><b>2.3</b> Locate Data</a></li>
 <li class="chapter" data-level="2.4" data-path="multiple-sra-files.html"><a href="multiple-sra-files.html#summary-1"><i class="fa fa-check"></i><b>2.4</b> Summary</a></li>
 </ul></li>
+<li class="chapter" data-level="3" data-path="customize-samples.html"><a href="customize-samples.html"><i class="fa fa-check"></i><b>3</b> Customize Samples</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="customize-samples.html"><a href="customize-samples.html#import-data"><i class="fa fa-check"></i><b>3.1</b> Import Data</a></li>
+<li class="chapter" data-level="3.2" data-path="customize-samples.html"><a href="customize-samples.html#the-samples.tsv-file"><i class="fa fa-check"></i><b>3.2</b> The <code>samples.tsv</code> File</a></li>
+<li class="chapter" data-level="3.3" data-path="customize-samples.html"><a href="customize-samples.html#upload-the-tsv"><i class="fa fa-check"></i><b>3.3</b> Upload the TSV</a></li>
+<li class="chapter" data-level="3.4" data-path="customize-samples.html"><a href="customize-samples.html#summary-2"><i class="fa fa-check"></i><b>3.4</b> Summary</a></li>
+</ul></li>
 <li class="part"><span><b>APPENDIX</b></span></li>
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -143,17 +150,17 @@
 <div id="select-workflow-data" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> Select Workflow Data</h2>
 <p>Navigate to the WORKFLOWS Tab and select the SRA_Fetch Workflow.</p>
-<p><img src="resources/images/01-quick_start_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g1f25a933000_0_0.png" title="Workflows tab with SRA_Fetch." alt="Workflows tab with SRA_Fetch." width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g1f25a933000_0_0.png" title="Workflows tab with SRA_Fetch." alt="Workflows tab with SRA_Fetch." width="100%" style="display: block; margin: auto;" /></p>
 <p>Select “Run workflow(s) with inputs defined by data table”.</p>
-<p><img src="resources/images/01-quick_start_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g1f25a933000_0_10.png" title="'Run workflow(s) with inputs defined by data table' has been selected." alt="'Run workflow(s) with inputs defined by data table' has been selected." width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g1f25a933000_0_10.png" title="'Run workflow(s) with inputs defined by data table' has been selected." alt="'Run workflow(s) with inputs defined by data table' has been selected." width="100%" style="display: block; margin: auto;" /></p>
 <p>Set the “Select root entity type” to “sample” and click SELECT DATA.</p>
-<p><img src="resources/images/01-quick_start_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208af248fb0_0_0.png" title="Step 1 and 2 for setting up the Workflow." alt="Step 1 and 2 for setting up the Workflow." width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208af248fb0_0_0.png" title="Step 1 and 2 for setting up the Workflow." alt="Step 1 and 2 for setting up the Workflow." width="100%" style="display: block; margin: auto;" /></p>
 <p>Select the second through fifth samples and click OK on the bottom right.</p>
-<p><img src="resources/images/01-quick_start_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_54.png" title="Select multiple files from the sample table" alt="Select multiple files from the sample table" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_54.png" title="Select multiple files from the sample table" alt="Select multiple files from the sample table" width="100%" style="display: block; margin: auto;" /></p>
 <p>Ensure the “Attribute” is set to <code>this.sample_id</code> and click RUN ANALYSIS.</p>
-<p><img src="resources/images/01-quick_start_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_64.png" title="Confirm `this.sample_id` and click the RUN ANALYSIS button" alt="Confirm `this.sample_id` and click the RUN ANALYSIS button" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_64.png" title="Confirm `this.sample_id` and click the RUN ANALYSIS button" alt="Confirm `this.sample_id` and click the RUN ANALYSIS button" width="100%" style="display: block; margin: auto;" /></p>
 <p>Click LAUNCH. You can close your browser or shut down your computer without interrupting the transfer.</p>
-<p><img src="resources/images/01-quick_start_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_73.png" title="Click the LAUNCH button; the 4 analyses being run is called out" alt="Click the LAUNCH button; the 4 analyses being run is called out" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_73.png" title="Click the LAUNCH button; the 4 analyses being run is called out" alt="Click the LAUNCH button; the 4 analyses being run is called out" width="100%" style="display: block; margin: auto;" /></p>
 <div class="notice">
 <p>The Workflow knows that you probably want to parallelize the import of your SRA files. This means that each import is happening at the same time. Notice how this workflow with multiple samples actually launched 4 different jobs/analyses! This means that AnVIL can help you process lots of files much faster than working with them one by one.</p>
 </div>
@@ -161,20 +168,20 @@
 <div id="check-workflow-1" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> Check Workflow</h2>
 <p>Click on the JOB HISTORY tab. Different submissions are arranged by newest on the top. You should see that the job status is “Done”.</p>
-<p><img src="resources/images/01-quick_start_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_83.png" title="An arrow pointing to 'Done' indicates the Workflow has completed successfully" alt="An arrow pointing to 'Done' indicates the Workflow has completed successfully" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_83.png" title="An arrow pointing to 'Done' indicates the Workflow has completed successfully" alt="An arrow pointing to 'Done' indicates the Workflow has completed successfully" width="100%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="locate-data-1" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> Locate Data</h2>
 <p>Click on the DATA tab and click on the “sample” table on the left.</p>
-<p><img src="resources/images/01-quick_start_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_31.png" title="Navigate to the Files folder under the DATA tab" alt="Navigate to the Files folder under the DATA tab" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_31.png" title="Navigate to the Files folder under the DATA tab" alt="Navigate to the Files folder under the DATA tab" width="100%" style="display: block; margin: auto;" /></p>
 <p>You should now see the files associated with the second through fifth sample!</p>
-<p><img src="resources/images/01-quick_start_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_92.png" title="The imported files are now visible in the sample table" alt="The imported files are now visible in the sample table" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_92.png" title="The imported files are now visible in the sample table" alt="The imported files are now visible in the sample table" width="100%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="summary-1" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Summary</h2>
 <ul>
 <li>Go to the WORKFLOWS tab</li>
-<li>Select <strong>mutiple</strong> samples via data table (“Run workflow(s) with inputs defined by data table”)</li>
+<li>Select <strong>multiple</strong> samples via data table (“Run workflow(s) with inputs defined by data table”)</li>
 <li>Set the Attribute to <code>this.sample_id</code></li>
 <li>SAVE and RUN ANALYSIS</li>
 <li>Go to DATA tab and click “sample” table to see files populated</li>
@@ -182,9 +189,6 @@
 
 </div>
 </div>
-
-
-
 <hr>
 <center> 
   <div class="footer">
@@ -199,7 +203,7 @@
         </div>
       </div>
 <a href="quick-start.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="about-the-authors.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="customize-samples.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

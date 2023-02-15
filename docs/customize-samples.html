@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>AnVIL: SRA Data</title>
+  <title>Chapter 3 Customize Samples | AnVIL: SRA Data</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="AnVIL: SRA Data" />
+  <meta property="og:title" content="Chapter 3 Customize Samples | AnVIL: SRA Data" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="AnVIL: SRA Data" />
+  <meta name="twitter:title" content="Chapter 3 Customize Samples | AnVIL: SRA Data" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/AnVIL_style/anvil_favicon.ico" type="image/x-icon" />
-
-<link rel="next" href="learning-objectives.html"/>
+<link rel="prev" href="multiple-sra-files.html"/>
+<link rel="next" href="about-the-authors.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -144,33 +144,53 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/AnVIL_style/dasl_thin_main_image.png">
 </div>
-<div id="header">
-<h1 class="title">AnVIL: SRA Data</h1>
-<p class="date"><em>February 15, 2023</em></p>
+<div id="customize-samples" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Customize Samples</h1>
+<p>You will probably need to select different samples than the ones in this demo.</p>
+<p>We’ve created another workspace, <code>SRA-data-on-AnVIL-example2</code>, to demonstrate how to upload your own sample IDs.</p>
+<p>If you go to the DATA tab, you’ll notice the same samples (ending in 22-26). These are here because data tables are copied when you clone a workspace. However, let’s add a second set of samples ending in 27-31.</p>
+<p><img src="03-custom_samples_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_101.png" title="The 'sample' data table has been cloned from the original Workspace, including the sample IDs" alt="The 'sample' data table has been cloned from the original Workspace, including the sample IDs" width="100%" style="display: block; margin: auto;" /></p>
+<div id="import-data" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Import Data</h2>
+<p>Click on IMPORT DATA and select “Upload TSV”.</p>
+<p><img src="03-custom_samples_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_144.png" title="The IMPORT DATA button and 'Upload TSV' option" alt="The IMPORT DATA button and 'Upload TSV' option" width="100%" style="display: block; margin: auto;" /></p>
+<p>This opens a popup that looks like this:</p>
+<p><img src="03-custom_samples_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_153.png" title="The popup is titled Import Data Table and has the option to click to select a .tsv file" alt="The popup is titled Import Data Table and has the option to click to select a .tsv file" width="100%" style="display: block; margin: auto;" /></p>
+<p>However, let’s take a moment to get acquainted with the new file we’ll be uploading.</p>
 </div>
-<div id="about-this-module" class="section level1 unnumbered">
-<h1>About this Module</h1>
-<p>This module is part of a series of books for the Genomic Data Science Analysis, Visualization, and Informatics Lab-space (AnVIL) of the National Human Genome Research Institute (NHGRI). Learn more about AnVIL by visiting <a href="https://anvilproject.org" class="uri">https://anvilproject.org</a> or reading the <a href="https://www.sciencedirect.com/science/article/pii/S2666979X21001063">article in Cell Genomics</a>.</p>
-<div id="about-sra" class="section level2 unnumbered">
-<h2>About SRA</h2>
-<p>This module will go over how to bring Sequence Read Archive (SRA) data into AnVIL.</p>
-<p>You can check out the <a href="https://www.ncbi.nlm.nih.gov/sra">SRA website</a> to learn more:</p>
-<blockquote>
-<p>Sequence Read Archive (SRA) data, available through multiple cloud providers and NCBI servers, is the largest publicly available repository of high throughput sequencing data. The archive accepts data from all branches of life as well as metagenomic and environmental surveys. SRA stores raw sequencing data and alignment information to enhance reproducibility and facilitate new discoveries through data analysis.</p>
-</blockquote>
-<p>It can be very exciting to learn how much data is at your fingertips! Once you have settled on some data to use, you’ll want to bring it into AnVIL if it’s not already there.</p>
-<p>Navigate to the menu on the left to get started!</p>
-</div>
-<div id="skills-level" class="section level2 unnumbered">
-<h2>Skills Level</h2>
+<div id="the-samples.tsv-file" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> The <code>samples.tsv</code> File</h2>
+<p>First, download the samples file here. You might have to right-click and “Save as”.</p>
+<p><a href="https://raw.githubusercontent.com/fhdsl/AnVIL_SRA_Data/main/samples.tsv">Download <code>samples.tsv</code></a></p>
+<p>Next, open the file on your local machine. This is what it might look like in Microsoft Excel:</p>
+<p><img src="03-custom_samples_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_163.png" title="The samples we want to import from SRA are listed in rows in `samples.tsv`" alt="The samples we want to import from SRA are listed in rows in `samples.tsv`" width="100%" style="display: block; margin: auto;" /></p>
 <div class="notice">
-<p><em>Genetics</em></p>
-<p><strong>Novice</strong>: no genetics knowledge needed</p>
-<p><em>Programming skills</em></p>
-<p><strong>Novice</strong>: no programming experience needed</p>
+<p>The column header <code>entity:sample_id</code> is important. <code>entity:</code> is required. <code>samples</code> becomes the name of the data table. So for example, if our header was <code>entity:reference_id</code>, a data table called “reference” would be created in AnVIL. If you didn’t want to overwrite anything in the original “samples” table, you could change the column header. As long as none of the IDs are the same, no data will be overwritten.</p>
 </div>
 </div>
+<div id="upload-the-tsv" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Upload the TSV</h2>
+<p>Back on AnVIL, Click to select a TSV file. This file should be the one you just downloaded above called <code>samples.tsv</code>. You will see a warning about potentially overwriting the existing entries. We know that none of the IDs in the new samples file overlap, so click START IMPORT JOB.</p>
+<p><img src="03-custom_samples_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_171.png" title="The warning is now visible on the popup and the START IMPORT JOB button is highlighted" alt="The warning is now visible on the popup and the START IMPORT JOB button is highlighted" width="100%" style="display: block; margin: auto;" /></p>
+<p>New samples have been added!</p>
+<p><img src="03-custom_samples_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_179.png" title="The new samples have been appended to the end of the samples data table" alt="The new samples have been appended to the end of the samples data table" width="100%" style="display: block; margin: auto;" /></p>
+<div class="notice">
+<p>You can now proceed with running the Workflow as you did in the <a href="quick-start.html#quick-start">Quick Start</a> and <a href="multiple-sra-files.html#multiple-sra-files">Multiple Files</a> sections.</p>
 </div>
+</div>
+<div id="summary-2" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Summary</h2>
+<ul>
+<li>Go to the DATA tab</li>
+<li>Select IMPORT DATA and “Upload TSV”</li>
+<li>Add your custom file and click START IMPORT JOB</li>
+</ul>
+
+</div>
+</div>
+
+
+
 <hr>
 <center> 
   <div class="footer">
@@ -184,8 +204,8 @@
           </div>
         </div>
       </div>
-
-<a href="learning-objectives.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="multiple-sra-files.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="about-the-authors.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

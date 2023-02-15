@@ -10,3 +10,8 @@ select-workflow-data
 check-workflow-1
 locate-data-1
 summary-1
+customize-samples
+import-data
+the-samples.tsv-file
+upload-the-tsv
+summary-2
