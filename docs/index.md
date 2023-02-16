@@ -1,6 +1,6 @@
 ---
 title: "AnVIL: SRA Data"
-date: "February 15, 2023"
+date: "February 16, 2023"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
@@ -8,6 +8,7 @@ biblio-style: apalike
 link-citations: yes
 description: Description about Course/Book.
 favicon: assets/AnVIL_style/anvil_favicon.ico
+css: assets/AnVIL_style/style.css
 ---
 
 

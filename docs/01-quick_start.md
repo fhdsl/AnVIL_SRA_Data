@@ -11,6 +11,8 @@ This data comes from [this BioProject](https://www.ncbi.nlm.nih.gov/bioproject/P
 
 The SRA Data corresponding to this project is located [here](https://www.ncbi.nlm.nih.gov/Traces/study/?acc=SRP409181&o=acc_s%3Aa).
 
+<img src="resources/images/01-quick_start_files/figure-html//1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_217.png" title="Microbiome diversity has many benefitial properties ranging soil and plant health." alt="Microbiome diversity has many benefitial properties ranging soil and plant health." width="100%" style="display: block; margin: auto;" />
+
 ## Clone Workspace
 
 Clone the Workspace `https://anvil.terra.bio/#workspaces/anvil-outreach/SRA-data-on-AnVIL`.
