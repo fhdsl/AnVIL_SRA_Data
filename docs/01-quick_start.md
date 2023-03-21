@@ -13,6 +13,10 @@ The SRA Data corresponding to this project is located [here](https://www.ncbi.nl
 
 <img src="resources/images/01-quick_start_files/figure-html//1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_217.png" title="Microbiome diversity has many benefitial properties ranging soil and plant health." alt="Microbiome diversity has many benefitial properties ranging soil and plant health." width="100%" style="display: block; margin: auto;" />
 
+::: {.dictionary}
+You might hear new terms for moving data around in the cloud. **Ingress** is when data comes to you, similar to downloading a file or receiving an email with an attachment. **Egress** is sending the data to another resource, similar to uploading or sending an attached file via email. There is no fee for ingressing data to AnVIL from SRA.
+:::
+
 ## Clone Workspace
 
 Clone the Workspace `https://anvil.terra.bio/#workspaces/anvil-outreach/SRA-data-on-AnVIL`.
