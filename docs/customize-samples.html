@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 3 Customize Samples | AnVIL: SRA Data</title>
   <meta name="description" content="Description about Course/Book." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 3 Customize Samples | AnVIL: SRA Data" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Description about Course/Book." />
   
@@ -23,7 +22,7 @@
 
 
 
-<meta name="date" content="2023-05-24" />
+<meta name="date" content="2025-01-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +31,6 @@
   <link rel="shortcut icon" href="assets/AnVIL_style/anvil_favicon.ico" type="image/x-icon" />
 <link rel="prev" href="multiple-sra-files.html"/>
 <link rel="next" href="about-the-authors.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,8 +48,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
   
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SY6HTV4PFP"></script>
@@ -65,6 +64,10 @@
 
 
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="assets/style.css" type="text/css" />
 <link rel="stylesheet" href="assets/AnVIL_style/anvil.css" type="text/css" />
@@ -122,7 +125,8 @@
 <p style="text-align:center;"> <a href="https://hutchdatascience.org/"> The Fred Hutch Data Science Lab </a></p>
 <a href="https://hutchdatascience.org/" target="_blank"><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/style-sets/fhdasl/copy_to_assets/big-dasl-stacked.png" style="width: 80%; padding-left: 34px; padding-top: 8px;"</a>
 <p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
-<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/AK12iVXTjsB7yCUUA"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span><a href="https://docs.google.com/forms/d/e/1FAIpQLScrDVb_utm55pmb_SHx-RgELTEbCCWdLea0T3IzS0Oj00GE4w/viewform?usp=pp_url&entry.1565230805=AnVIL:+SRA+Data"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+
 </ul>
 
       </nav>
@@ -151,42 +155,42 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/AnVIL_style/dasl_thin_main_image.png">
 </div>
-<div id="customize-samples" class="section level1" number="3">
-<h1><span class="header-section-number">Chapter 3</span> Customize Samples</h1>
+<div id="customize-samples" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Customize Samples<a href="customize-samples.html#customize-samples" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>You will probably need to select different samples than the ones in this demo.</p>
 <p>We’ve created another workspace, <code>SRA-data-on-AnVIL-example2</code>, to demonstrate how to upload your own sample IDs.</p>
 <p>If you go to the DATA tab, you’ll notice the same samples (ending in 22-26). These are here because data tables are copied when you clone a workspace. However, let’s add a second set of samples ending in 27-31.</p>
-<p><img src="03-custom_samples_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_101.png" title="The 'sample' data table has been cloned from the original Workspace, including the sample IDs" alt="The 'sample' data table has been cloned from the original Workspace, including the sample IDs" width="100%" style="display: block; margin: auto;" /></p>
-<div id="import-data" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Import Data</h2>
+<p><img src="03-custom_samples_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_101.png" alt="The 'sample' data table has been cloned from the original Workspace, including the sample IDs" width="100%" style="display: block; margin: auto;" /></p>
+<div id="import-data" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Import Data<a href="customize-samples.html#import-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Click on IMPORT DATA and select “Upload TSV”.</p>
-<p><img src="03-custom_samples_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_144.png" title="The IMPORT DATA button and 'Upload TSV' option" alt="The IMPORT DATA button and 'Upload TSV' option" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="03-custom_samples_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_144.png" alt="The IMPORT DATA button and 'Upload TSV' option" width="100%" style="display: block; margin: auto;" /></p>
 <p>This opens a popup that looks like this:</p>
-<p><img src="03-custom_samples_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_153.png" title="The popup is titled Import Data Table and has the option to click to select a .tsv file" alt="The popup is titled Import Data Table and has the option to click to select a .tsv file" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="03-custom_samples_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_153.png" alt="The popup is titled Import Data Table and has the option to click to select a .tsv file" width="100%" style="display: block; margin: auto;" /></p>
 <p>However, let’s take a moment to get acquainted with the new file we’ll be uploading.</p>
 </div>
-<div id="the-samples.tsv-file" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> The <code>samples.tsv</code> File</h2>
+<div id="the-samples.tsv-file" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> The <code>samples.tsv</code> File<a href="customize-samples.html#the-samples.tsv-file" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>First, download the samples file here. You might have to right-click and “Save as”.</p>
 <p><a href="https://raw.githubusercontent.com/fhdsl/AnVIL_SRA_Data/main/samples.tsv">Download <code>samples.tsv</code></a></p>
 <p>Next, open the file on your local machine. This is what it might look like in Microsoft Excel:</p>
-<p><img src="03-custom_samples_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_163.png" title="The samples we want to import from SRA are listed in rows in `samples.tsv`" alt="The samples we want to import from SRA are listed in rows in `samples.tsv`" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="03-custom_samples_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_163.png" alt="The samples we want to import from SRA are listed in rows in `samples.tsv`" width="100%" style="display: block; margin: auto;" /></p>
 <div class="notice">
 <p>The column header <code>entity:sample_id</code> is important. <code>entity:</code> is required. <code>samples</code> becomes the name of the data table. So for example, if our header was <code>entity:reference_id</code>, a data table called “reference” would be created in AnVIL. If you didn’t want to overwrite anything in the original “samples” table, you could change the column header. As long as none of the IDs are the same, no data will be overwritten.</p>
 </div>
 </div>
-<div id="upload-the-tsv" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Upload the TSV</h2>
+<div id="upload-the-tsv" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Upload the TSV<a href="customize-samples.html#upload-the-tsv" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Back on AnVIL, Click to select a TSV file. This file should be the one you just downloaded above called <code>samples.tsv</code>. You will see a warning about potentially overwriting the existing entries. We know that none of the IDs in the new samples file overlap, so click START IMPORT JOB.</p>
-<p><img src="03-custom_samples_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_171.png" title="The warning is now visible on the popup and the START IMPORT JOB button is highlighted" alt="The warning is now visible on the popup and the START IMPORT JOB button is highlighted" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="03-custom_samples_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_171.png" alt="The warning is now visible on the popup and the START IMPORT JOB button is highlighted" width="100%" style="display: block; margin: auto;" /></p>
 <p>New samples have been added!</p>
-<p><img src="03-custom_samples_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_179.png" title="The new samples have been appended to the end of the samples data table" alt="The new samples have been appended to the end of the samples data table" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="03-custom_samples_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_179.png" alt="The new samples have been appended to the end of the samples data table" width="100%" style="display: block; margin: auto;" /></p>
 <div class="notice">
 <p>You can now proceed with running the Workflow as you did in the <a href="quick-start.html#quick-start">Quick Start</a> and <a href="multiple-sra-files.html#multiple-sra-files">Multiple Files</a> sections.</p>
 </div>
 </div>
-<div id="summary-2" class="section level2" number="3.4">
-<h2><span class="header-section-number">3.4</span> Summary</h2>
+<div id="summary-2" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Summary<a href="customize-samples.html#summary-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li>Go to the DATA tab</li>
 <li>Select IMPORT DATA and “Upload TSV”</li>

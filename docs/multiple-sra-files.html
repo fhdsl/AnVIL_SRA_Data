@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 2 Multiple SRA files | AnVIL: SRA Data</title>
   <meta name="description" content="Description about Course/Book." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 2 Multiple SRA files | AnVIL: SRA Data" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Description about Course/Book." />
   
@@ -23,7 +22,7 @@
 
 
 
-<meta name="date" content="2023-05-24" />
+<meta name="date" content="2025-01-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +31,6 @@
   <link rel="shortcut icon" href="assets/AnVIL_style/anvil_favicon.ico" type="image/x-icon" />
 <link rel="prev" href="quick-start.html"/>
 <link rel="next" href="customize-samples.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,8 +48,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
   
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SY6HTV4PFP"></script>
@@ -65,6 +64,10 @@
 
 
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="assets/style.css" type="text/css" />
 <link rel="stylesheet" href="assets/AnVIL_style/anvil.css" type="text/css" />
@@ -122,7 +125,8 @@
 <p style="text-align:center;"> <a href="https://hutchdatascience.org/"> The Fred Hutch Data Science Lab </a></p>
 <a href="https://hutchdatascience.org/" target="_blank"><img src="https://raw.githubusercontent.com/jhudsl/OTTR_Template/main/style-sets/fhdasl/copy_to_assets/big-dasl-stacked.png" style="width: 80%; padding-left: 34px; padding-top: 8px;"</a>
 <p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
-<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/AK12iVXTjsB7yCUUA"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span><a href="https://docs.google.com/forms/d/e/1FAIpQLScrDVb_utm55pmb_SHx-RgELTEbCCWdLea0T3IzS0Oj00GE4w/viewform?usp=pp_url&entry.1565230805=AnVIL:+SRA+Data"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+
 </ul>
 
       </nav>
@@ -151,41 +155,41 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/AnVIL_style/dasl_thin_main_image.png">
 </div>
-<div id="multiple-sra-files" class="section level1" number="2">
-<h1><span class="header-section-number">Chapter 2</span> Multiple SRA files</h1>
+<div id="multiple-sra-files" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Multiple SRA files<a href="multiple-sra-files.html#multiple-sra-files" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>More than likely, you will be importing multiple files from SRA. Luckily, this is quite easy in AnVIL! In contrast to how your local computer works, The SRA Fetch Workflow imports files in parallel, so it does not take a substantially longer time.</p>
-<div id="select-workflow-data" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> Select Workflow Data</h2>
+<div id="select-workflow-data" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Select Workflow Data<a href="multiple-sra-files.html#select-workflow-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Navigate to the WORKFLOWS Tab and select the SRA_Fetch Workflow.</p>
-<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g1f25a933000_0_0.png" title="Workflows tab with SRA_Fetch." alt="Workflows tab with SRA_Fetch." width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g1f25a933000_0_0.png" alt="Workflows tab with SRA_Fetch." width="100%" style="display: block; margin: auto;" /></p>
 <p>Select “Run workflow(s) with inputs defined by data table”.</p>
-<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g1f25a933000_0_10.png" title="'Run workflow(s) with inputs defined by data table' has been selected." alt="'Run workflow(s) with inputs defined by data table' has been selected." width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g1f25a933000_0_10.png" alt="'Run workflow(s) with inputs defined by data table' has been selected." width="100%" style="display: block; margin: auto;" /></p>
 <p>Set the “Select root entity type” to “sample” and click SELECT DATA.</p>
-<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208af248fb0_0_0.png" title="Step 1 and 2 for setting up the Workflow." alt="Step 1 and 2 for setting up the Workflow." width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208af248fb0_0_0.png" alt="Step 1 and 2 for setting up the Workflow." width="100%" style="display: block; margin: auto;" /></p>
 <p>Select the second through fifth samples and click OK on the bottom right.</p>
-<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_54.png" title="Select multiple files from the sample table" alt="Select multiple files from the sample table" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_54.png" alt="Select multiple files from the sample table" width="100%" style="display: block; margin: auto;" /></p>
 <p>Ensure the “Attribute” is set to <code>this.sample_id</code> and click RUN ANALYSIS.</p>
-<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_64.png" title="Confirm `this.sample_id` and click the RUN ANALYSIS button" alt="Confirm `this.sample_id` and click the RUN ANALYSIS button" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_64.png" alt="Confirm `this.sample_id` and click the RUN ANALYSIS button" width="100%" style="display: block; margin: auto;" /></p>
 <p>Click LAUNCH. You can close your browser or shut down your computer without interrupting the transfer.</p>
-<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_73.png" title="Click the LAUNCH button; the 4 analyses being run is called out" alt="Click the LAUNCH button; the 4 analyses being run is called out" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_73.png" alt="Click the LAUNCH button; the 4 analyses being run is called out" width="100%" style="display: block; margin: auto;" /></p>
 <div class="notice">
 <p>The Workflow knows that you probably want to parallelize the import of your SRA files. This means that each import is happening at the same time. Notice how this workflow with multiple samples actually launched 4 different jobs/analyses! This means that AnVIL can help you process lots of files much faster than working with them one by one.</p>
 </div>
 </div>
-<div id="check-workflow-1" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> Check Workflow</h2>
+<div id="check-workflow-1" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Check Workflow<a href="multiple-sra-files.html#check-workflow-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Click on the JOB HISTORY tab. Different submissions are arranged by newest on the top. You should see that the job status is “Done”.</p>
-<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_83.png" title="An arrow pointing to 'Done' indicates the Workflow has completed successfully" alt="An arrow pointing to 'Done' indicates the Workflow has completed successfully" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_83.png" alt="An arrow pointing to 'Done' indicates the Workflow has completed successfully" width="100%" style="display: block; margin: auto;" /></p>
 </div>
-<div id="locate-data-1" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Locate Data</h2>
+<div id="locate-data-1" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Locate Data<a href="multiple-sra-files.html#locate-data-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Click on the DATA tab and click on the “sample” table on the left.</p>
-<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_31.png" title="Navigate to the Files folder under the DATA tab" alt="Navigate to the Files folder under the DATA tab" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_31.png" alt="Navigate to the Files folder under the DATA tab" width="100%" style="display: block; margin: auto;" /></p>
 <p>You should now see the files associated with the second through fifth sample!</p>
-<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_92.png" title="The imported files are now visible in the sample table" alt="The imported files are now visible in the sample table" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="02-multi_file_files/figure-html/1l0P0gFpsPkYG7blqJ_5JyYYlztJFZDD39CnIB4svrY8_g208b8f790dc_23_92.png" alt="The imported files are now visible in the sample table" width="100%" style="display: block; margin: auto;" /></p>
 </div>
-<div id="summary-1" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> Summary</h2>
+<div id="summary-1" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Summary<a href="multiple-sra-files.html#summary-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li>Go to the WORKFLOWS tab</li>
 <li>Select <strong>multiple</strong> samples via data table (“Run workflow(s) with inputs defined by data table”)</li>
