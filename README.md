@@ -1,48 +1,22 @@
-<!--Delete this section below upon using the template-->
-
-## AnVIL Template
-
-Based on [_Open-source Tools for Training Resources (OTTR)_](https://github.com/jhudsl/OTTR_Template)
-
-The purpose of this template and is to make publishing maintenance for AnVIL content across multiple different platforms _less painful_.
-
-_This template helps you_:   
-
-- Edit and write an AnVIL course in [RMarkdown files](https://rmarkdown.rstudio.com/) and have it published to multiple different platforms:
-  - [Leanpub](https://leanpub.com/bookstore?type=course)
-  - [Bookdown](https://bookdown.org/)
-  - [Coursera](https://www.coursera.org/)
-- Have [Github action robots](https://github.com/jhudsl/OTTR_Template/wiki/How-to-set-up-and-customize-GitHub-actions-robots) do your repetitive tasks like spell check and re-rendering. 
-- Use [automagic conversion](https://github.com/jhudsl/ottrpal) to ease the lift of prepping the material for different platforms' formats.
-- Use [our Docker image](https://hub.docker.com/repository/docker/jhudsl/course_template) for consistency across authors as well as to help you [avoid dependency hell](https://en.wikipedia.org/wiki/Dependency_hell). 
-
-<img src="https://docs.google.com/presentation/d/18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU/export/png?id=18k_QN7l6zqZQXoiRfKWzcYFXNXJJEo6j4daYGoc3UcU&pageid=gf4fcf6569c_2_29" width="500"/>
-
-## To Get Started
-- Go to the [OTTR Wiki page](https://github.com/jhudsl/OTTR_Template/wiki/Getting-started)
-- Please take a look at the [code of conduct](./code_of_conduct.md).
-- If you encounter any problems or have improvement ideas for this template repository, please [file an issue](https://github.com/jhudsl/AnVIL_bookdown_style/issues/new/choose)! Issues for the parent repository (the OTTR template repository) are also very much appreciated and can be submitted [here](https://github.com/jhudsl/OTTR_Template/issues/new/choose).
-
-<!--Delete everything above this line upon using the template-->
-
-# {Course Name}
+# SRA Data on ANVIL
 
 [![Render Bookdown and Coursera](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml/badge.svg)](https://github.com/jhudsl/OTTR_Template/actions/workflows/render-all.yml)
 
 This course was created from [the AnVIL Template](https://github.com/jhudsl/AnVIL_bookdown_style), which is based on [the OTTR Template](https://github.com/jhudsl/OTTR_Template)
 
-You can see the rendered course material here: {Link to rendered bookdown and/or to the Leanpub. Will look something like: https://jhudatascience.org/{Course_Name}}
+You can see the rendered course material here: https://hutchdatascience.org/AnVIL_SRA_Data/
 
 ## About this course
 
-This course introduces {info on what this course introduces}
+This course helps AnVIL Users bring SRA data to ANVIL.
 
 ## Learning Objectives
 
-This course will teach learners to:  
+This course will teach learners to:
 
-- {You can use https://www.bobpikegroup.com/trainer-blog/5-steps-to-writing-clear-and-measurable-learning-objectives to define some learning objectives here}
-- {More learning objectives}
+-  Use a WDL Workflow on AnVIL to bring in an example SRA accession.
+-  Use WDL to import multiple SRA accessions at once.
+-  Customize which SRA accessions will be brought to AnVIL.
 
 ## Encountering problems?
 
